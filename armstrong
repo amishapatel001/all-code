@@ -1,0 +1,16 @@
+static boolean isArmstrong(int N)
+    {
+        int cube=0,num,temp;
+        temp=N;
+        while (N>0){
+
+        num=N%10;
+        cube=cube+(num*num*num);
+        N=N/10;
+        }
+    if(temp==cube)
+    return true;
+    else
+    return false;
+
+    }
